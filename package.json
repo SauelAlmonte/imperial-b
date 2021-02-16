@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.6",
+    "tailwindcss": "^2.0.3"
+  },
+  "scripts": {
+    "dev" : "live-server .",
+    "tw" : "tailwindcss build ./src/tailwind.css -o ./dist/styles.css"
+  }
+}
