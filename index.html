@@ -12,18 +12,56 @@
     <title>Imperial</title>
 </head>
 
-<body class="min-h-screen bg-gray-100" >
+<body class="flex flex-col min-h-screen bg-gray-100 font-serif" >
 
-    <nav class="md:p-5 p-3 border-2 bd-color-black font-serif">
-        <div class="md:w-full flex justify-between">
-            <h1 class="font-bold text-2xl md:text-3xl text-amber-500 justify-start">IMPERIAL !</h1>
-                <div class="flex text-amber-500 justify-end items-center">
-                    <a href="#" class="mr-3 hover:underline text-sm md:text-base hover:text-yellow-600">Register</a>
-                    <a href="#" class="hover:underline text-sm md:text-base">Login</a>
+    <header>
+
+        <nav class="md:p-5 p-3 border-2 bd-color-black bg-warm-gray-200">
+            <div class="md:w-full flex justify-between">
+                <a href="#" class="font-bold text-2xl md:text-3xl text-amber-600 justify-start hover:text-yellow-700">IMPERIAL !</a>
+                    <div class="flex">
+                        <ul class="inline-flex text-amber-600 justify-end items-center space-x-3">
+                            <li><a href="#" class="hover:underline text-sm md:text-base hover:text-yellow-700">Register</a></li>
+                            <li><a href="#" class="hover:underline text-sm md:text-base hover:text-yellow-700">Login</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </nav>
+
+    </header>    
+
+    <main class="flex-grow">
+
+        <div class="md:container max-w-sm h-auto md:w-2/3 md:h-auto m-auto text-center mt-28">
+            <div class="border border-dashed border-amber-600 relative h-36 bg-warm-gray-200">
+                <div class="p-10 absolute top-0 right-0 left-0 text-gray-400 md:container">
+                    <h4>
+                        Drop files anywhere to upload
+                        <br/>or
+                    </h4>
+                    <p class="">Select Files</p>
                 </div>
+            </div>
+            <input type="file" multiple class="md:visible invisible w-auto h-auto cursor-pointer block opacity-50 hover:color-gray-100 border border-dashed border-amber-600">
         </div>
-    </nav>
-    
+
+    </main>    
+
+    <footer class="md:w-full text-center bg-warm-gray-200 pin-bottom mt-20">
+        <div class="container px-6 pt-4 pb-6 mx-auto">
+            <div class="flex flex-wrap">
+                <div class="w-full text-center md:w-1/4 md:text-left">
+                    <h5 class="mb-6 font-bold text-amber-600  uppercase">Links</h5>
+                        <ul class="block space-y-2">
+                            <li><a href="#" class="text-amber-600 hover:underline text-sm md:text-base hover:text-yellow-700">About Us</a></li>
+                            <li><a href="#" class="text-amber-600 hover:underline text-sm md:text-base hover:text-yellow-700">Contact</a></li>
+                        </ul>    
+                    </h5>    
+                </div>
+            </div>    
+        </div>
+    </footer>
+   
     
 </body>
 </html>
